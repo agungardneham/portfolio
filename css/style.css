@@ -1,10 +1,67 @@
-.test{
-    width: 30%;
-    height: 30%;
-    background-color: yellow;
+#hero{
+    background-image: url(../resources/hero-image.jpg);
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero-text{
+    padding-top: 10%;
+}
+
+.hero-button{
+    padding-bottom: 100%;
+}
+
+.link{
+    text-decoration: none;
+    color:white;
+}
+
+.photo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo{
+    height: 50%;
+    border-radius: 50%;
+}
+
+.profile-intro{
+    text-align: center;
+}
+
+.skillsimage-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsimage-container2{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill{
     border: 5px solid black;
 }
 
-.height{
-    line-break: 1000px;
+svg{
+    fill: white;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
