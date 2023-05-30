@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: clip; 
+}
+
 #hero{
     background-image: url(../resources/hero-image.jpg);
     background-size: 100% cover;
@@ -64,4 +73,21 @@ svg{
     display: flex;
     flex-direction: row;
     gap: 10px;
+}
+
+.edu{
+    background-image: url(../resources/road2.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: 460vh;
+}
+
+.edu-desc{
+    color: black;
+}
+
+.edu-list{
+    list-style-type: disc;
+    text-align: justify
 }
