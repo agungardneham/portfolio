@@ -76,9 +76,9 @@ svg{
 }
 
 .edu{
-    background-image: url(../resources/road2.png);
+    background-image: url(../resources/road.png);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     height: 460vh;
 }
@@ -90,4 +90,8 @@ svg{
 .edu-list{
     list-style-type: disc;
     text-align: justify
+}
+
+#svg1, #svg2, #svg3, #svg4{
+    fill: black;
 }
