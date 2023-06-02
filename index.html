@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#hero">Agung's Portfolio</a>
+          <a class="navbar-brand navtitle" href="#hero">Agung's Portfolio</a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-collapse collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#profile">Profile</a>
+                <a class="nav-link active content" aria-current="page" href="#profile">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="experience.html">Experience</a>
+                <a class="nav-link content" href="experience.html">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link content" href="projects.html">Projects</a>
               </li>
             </ul>
           </div>
@@ -35,12 +38,23 @@
     <section id="hero" class="hero">
         <div class="text-secondary px-4 text-center">
             <div class="hero-container">
-              <h1 class="display-5 fw-bold text-white hero-text">Welcome to My Portfolio</h1>
+              <h1 class="display-5 fw-bold text-white hero-text hero-heading">Welcome to My Portfolio</h1>
               <div class="col-lg-6 mx-auto">
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <button type="button" class="btn btn-outline-light btn-lg px-4 mt-5 hero-button"><a href="#profile" class="link">Get Started <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-chevron-right pb-1" viewBox="0 0 16 16">
+                  <div class="hero-buttton-container">
+                  <button type="button" class="btn btn-outline-light btn-lg px-4 mt-5 mx-3 hero-button"><a href="#profile" class="link heading">My Profile <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-chevron-right pb-1" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg></a></button>
+                  </svg></a>
+                  </button>
+                  <button type="button" class="btn btn-outline-light btn-lg px-4 mt-5 mx-3 hero-button"><a href="experience.html" class="link heading">My Experience <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-chevron-right pb-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg></a>
+                  </button>
+                  <button type="button" class="btn btn-outline-light btn-lg px-4 mt-5 mx-3 hero-button"><a href="projects.html" class="link heading">My Projects <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-chevron-right pb-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg></a>
+                  </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -48,19 +62,19 @@
     </section>
     <section id="profile">
         <div class="container">
-            <h2 class="pb-2 border-bottom mt-5">Profile and Biodata</h2>
+            <h2 class="pb-2 border-bottom mt-5 heading">Profile and Biodata</h2>
         </div>
         <div class="container">
             <div class="row align-items-md-stretch">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="3500">
                   <div class="h-100 text-bg-dark rounded-3 photo-container">
                     <img src="resources/photoupper.png" alt="my photo" class="profile-photo">
-                    <p class="profile-intro mx-5 mt-5">Hi, I'm Agung Mahendra. I love to learn programming. For now, I'm focusing in web development. My goal is creating a useful apps or even my own game.</p>
+                    <p class="profile-intro mx-5 mt-5 content">Hi, I'm Agung Mahendra. I love to learn programming. For now, I'm focusing in web development. My goal is creating a useful apps or even my own game.</p>
                   </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-duration="3000">
                   <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                    <h2>Skills</h2>
+                    <h2 class="heading">Skills</h2>
                     <div class="list-group">
                         <a class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-filetype-html flex-shrink-0 me-2" viewBox="0 0 16 16">
@@ -68,8 +82,8 @@
                           </svg>
                           <div class="d-flex gap-2 w-100 justify-content-between">
                             <div>
-                              <h6 class="mb-0">HTML</h6>
-                              <p class="mb-0 opacity-75">Hypertext Markup Language</p>
+                              <h6 class="mb-0 content bolder">HTML</h6>
+                              <p class="mb-0 opacity-75 content">Hypertext Markup Language</p>
                             </div>
                           </div>
                         </a>
@@ -93,8 +107,8 @@
                             </div>
                           <div class="d-flex gap-1 w-100 justify-content-between">
                             <div>
-                              <h6 class="mb-0">CSS</h6>
-                              <p class="mb-0 opacity-75">Vanilla CSS, SCSS, Bootstrap, and TailwindCSS</p>
+                              <h6 class="mb-0 content bolder">CSS</h6>
+                              <p class="mb-0 opacity-75 content">Vanilla CSS, SCSS, Bootstrap, and TailwindCSS</p>
                             </div>
                           </div>
                         </a>
@@ -107,8 +121,8 @@
                             </div>
                           <div class="d-flex gap-2 w-100 justify-content-between">
                             <div>
-                              <h6 class="mb-0">Javascript</h6>
-                              <p class="mb-0 opacity-75">Vanilla Javascript and ReactJS</p>
+                              <h6 class="mb-0 content bolder">Javascript</h6>
+                              <p class="mb-0 opacity-75 content">Vanilla Javascript and ReactJS</p>
                             </div>
                           </div>
                         </a>
@@ -123,8 +137,8 @@
                                 </div>
                               <div class="d-flex gap-2 w-100 justify-content-between">
                                 <div>
-                                <h6 class="mb-0">Version Control System</h6>
-                                <p class="mb-0 opacity-75">Git, GitHub, GitLab, etc</p>
+                                <h6 class="mb-0 content bolder">Version Control System</h6>
+                                <p class="mb-0 opacity-75 content">Git, GitHub, GitLab, etc</p>
                               </div>
                             </div>
                           </a>
@@ -135,8 +149,8 @@
                               </svg>
                             <div class="d-flex gap-2 w-100 justify-content-between">
                               <div>
-                                <h6 class="mb-0">Web Design Principle</h6>
-                                <p class="mb-0 opacity-75">UI/UX design, color theory, typography, etc</p>
+                                <h6 class="mb-0 content bolder">Web Design Principle</h6>
+                                <p class="mb-0 opacity-75 content">UI/UX design, color theory, typography, etc</p>
                               </div>
                             </div>
                           </a>
@@ -146,8 +160,8 @@
                             </svg>
                             <div class="d-flex gap-2 w-100 justify-content-between">
                               <div>
-                                <h6 class="mb-0">SQL</h6>
-                                <p class="mb-0 opacity-75">Big data processing and data analyzing</p>
+                                <h6 class="mb-0 content bolder">SQL</h6>
+                                <p class="mb-0 opacity-75 content">Big data processing and data analyzing</p>
                               </div>
                             </div>
                           </a>
@@ -163,12 +177,12 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-envelope-fill mb-2" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                   </svg>
-              <h1 class="text-body-emphasis">Get in Touch With Me</h1>
-              <p class="col-lg-6 mx-auto mb-4">
+              <h1 class="text-body-emphasis heading">Get in Touch With Me</h1>
+              <p class="col-lg-6 mx-auto mb-4 content">
                 If you want to collaborate or discuss something, you can contact me via email from the button below or via my other contact.
               </p>
               <button class="btn btn-outline-light px-5 mb-5" type="button">
-                <a class="link" href="mailto:agungmahendra1322@gmail.com">Mail Me</a>
+                <a class="link heading" href="mailto:agungmahendra1322@gmail.com">Mail Me</a>
               </button>
             </div>
           </div>
@@ -199,7 +213,7 @@
                     </svg>
                 </a>
                 </div>
-                <p class="text-body-secondary">© Agung Mahendra</p>
+                <p class="text-body-secondary content">© Agung Mahendra</p>
               </div>
           
               <div class="col mb-3">
@@ -207,30 +221,30 @@
               </div>
           
               <div class="col mb-3">
-                <h5>Profile</h5>
+                <h5><a href="index.html" class="footer-link heading">Profile</a></h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#hero" class="nav-link p-0 text-body-secondary">Welcome Page</a></li>
-                  <li class="nav-item mb-2"><a href="#profile" class="nav-link p-0 text-body-secondary">Profile and Biodata</a></li>
-                  <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact Me</a></li>
+                  <li class="nav-item mb-2"><a href="#hero" class="nav-link p-0 text-body-secondary content">Welcome Page</a></li>
+                  <li class="nav-item mb-2"><a href="#profile" class="nav-link p-0 text-body-secondary content">Profile and Biodata</a></li>
+                  <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary content">Contact Me</a></li>
                 </ul>
               </div>
           
               <div class="col mb-3">
-                <h5>Experience</h5>
+                <h5><a href="experience.html" class="footer-link heading">Experience</a></h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="experience.html#education" class="nav-link p-0 text-body-secondary">Education</a></li>
-                  <li class="nav-item mb-2"><a href="experience.html#course" class="nav-link p-0 text-body-secondary">Course</a></li>
-                  <li class="nav-item mb-2"><a href="experience.html#internship" class="nav-link p-0 text-body-secondary">Internship and Other Experience</a></li>
-                  <li class="nav-item mb-2"><a href="experience.html#organization" class="nav-link p-0 text-body-secondary">Organizational Activity</a></li>
+                  <li class="nav-item mb-2"><a href="experience.html#education" class="nav-link p-0 text-body-secondary content">Education</a></li>
+                  <li class="nav-item mb-2"><a href="experience.html#course" class="nav-link p-0 text-body-secondary content">Course</a></li>
+                  <li class="nav-item mb-2"><a href="experience.html#internship" class="nav-link p-0 text-body-secondary content">Internship and Other Experience</a></li>
+                  <li class="nav-item mb-2"><a href="experience.html#organization" class="nav-link p-0 text-body-secondary content">Organizational Activity</a></li>
                 </ul>
               </div>
           
               <div class="col mb-3">
-                <h5>Projects</h5>
+                <h5><a href="projects.html" class="footer-link heading">Projects</a></h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="projects.html#metalfest" class="nav-link p-0 text-body-secondary">Metalfest ITB</a></li>
-                  <li class="nav-item mb-2"><a href="projects.html#revou" class="nav-link p-0 text-body-secondary">RevoU Mini Project</a></li>
-                  <li class="nav-item mb-2"><a href="projects.html#portfolio" class="nav-link p-0 text-body-secondary">Portfolio</a></li>
+                  <li class="nav-item mb-2"><a href="projects.html#metalfest" class="nav-link p-0 text-body-secondary content">Metalfest ITB</a></li>
+                  <li class="nav-item mb-2"><a href="projects.html#revou" class="nav-link p-0 text-body-secondary content">RevoU Mini Project</a></li>
+                  <li class="nav-item mb-2"><a href="projects.html#portfolio" class="nav-link p-0 text-body-secondary content">Portfolio</a></li>
                 </ul>
               </div>
             </footer>

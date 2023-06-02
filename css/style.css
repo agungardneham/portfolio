@@ -7,6 +7,29 @@ html,body
     overflow-x: clip; 
 }
 
+.navtitle{
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+}
+
+.hero-heading{
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.1rem;
+}
+
+.heading{
+    font-family: 'Merriweather', serif;
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
 #hero{
     background-image: url(../resources/hero-image.jpg);
     background-size: 100% cover;
@@ -75,18 +98,6 @@ svg{
     gap: 10px;
 }
 
-.edu{
-    background-image: url(../resources/road.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 460vh;
-}
-
-.edu-desc{
-    color: black;
-}
-
 .edu-list{
     list-style-type: disc;
     text-align: justify
@@ -94,4 +105,9 @@ svg{
 
 #svg1, #svg2, #svg3, #svg4{
     fill: black;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: inherit;
 }
