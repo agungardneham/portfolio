@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" type="favicon" href="resource/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re:Kreasi</title>
+
+    <script>
+        function validateForm() {
+            //validate email
+             let x = document.forms["form"]["email"].value;
+                if (x == "") {
+                    alert("Harap isi email Anda");
+                return false;
+                } else {
+                    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if(!emailPattern.test(email)){
+                        alert("Format email salah");
+                        return false;
+                    }
+                }
+            }
+            //validate nomor WA
+            let x = document.forms["form"]["wanumber"].value;
+                if (isNaN(x) || x < 99999999999 || x > 99999999999999){
+                    alert("Harap isi nomor WA dengan awalan +62");
+                    return false;
+                }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="header-border">
+        <!--Navigation bar yang memuat bookmark suatu bagian page tertentu-->
+            <a href="index.html"><img src="resource/logo.png"></a>
+            <div class="navbar">
+                <ul class="navigation-list">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#ourpackage">Our Package</a></li>
+                    <li class="nav-item"><a href="#callus">Call Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Hero image latar belakangnya suatu gambar, ditumpuk logo berteks-->
+        <div id="home">    
+            <div class="hero-image">
+                <img class="img-slideshow" src="resource/bg.jpg">
+                <img class="img-slideshow" src="resource/bali.jpg">
+                <img class="img-slideshow" src="resource/bandung.jpg">
+                <img class="img-slideshow" src="resource/manado.jpeg">
+                <img class="img-slideshow" src="resource/medan.jpg">
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+            
+                    function plusDivs(n) {
+                      showDivs((slideIndex += n));
+                    }
+            
+                    function showDivs(n) {
+                      var i;
+                      var imgList = document.getElementsByClassName("img-slideshow");
+                      if (n > imgList.length) slideIndex = 1;
+                      else if (n < 1) slideIndex = imgList.length;
+            
+                      for (i = 0; i < imgList.length; i++) {
+                        imgList[i].style.display = "none";
+                      }
+            
+                      imgList[slideIndex - 1].style.display = "block";
+                    }
+            
+                    setInterval(() => {
+                      plusDivs(1);
+                    }, 1000);
+                  </script>
+                <div class="hero-textlogo">
+                    <img src="resource/textlogo.png">
+                </div>
+            </div>
+        </div>
+        <!--flexbox yg memuat konten testimoni di kiri & form contact us di kanan dgn rasio 60:40-->
+        <div class="flex-container">
+            <div class="left">
+                <div class="testi">
+                    <img src="resource/testi1.jpg" style="max-width: 100%; height: auto;">
+                </div>
+                <p class="testi">"Pelayanan agen perjalanan ini sangat ramah dan membantu saya dalam merencanakan liburan keluarga yang tak terlupakan"</p>
+                <br>
+                <div class="custprofile">
+                    <img class="cust-img" src="resource/profil1.jpg" style="max-width: 150px; max-height: 150px">
+                    <p class="custname"><span style="font-size: 25px; font-weight: bold;">Alex</span><br>Pegawai Kantoran, 30</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="contact-container">
+                    <h2>Contact Us</h2>
+                    <p class="contactus">Pihak kami akan segera menghubungi Anda maksimal 1x24 jam kerja setelah data kami terima.</p>
+                    <form name="form" action="ceritanya-ini-page-pengumpul-data.php" method="post">
+                        <label for="yourname">Nama Anda</label><br>
+                        <input type="text" id="yourname" name="yourname" placeholder="Isikan nama lengkap Anda" required><br>
+                        <label for="email">Alamat E-mail</label><br>
+                        <input type="text" id="email" name="email" placeholder="Isikan alamat e-mail Anda" required><br>
+                        <label for="wanumber">Nomor Whatsapp</label><br>
+                        <input type="text" id="wanumber" name="wanumber" placeholder="Isikan nomor WA aktif Anda" required><br>
+                        <label for="vpackage">Pilihan Paket Liburan</label><br>
+                        <select id="vpackage" name="vpackage">
+                            <option disabled selected>Pilih Paket</option>
+                            <option value="bali">Bali</option>
+                            <option value="lombok">Lombok</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="manado">Manado</option>
+                            <option value="medan">Medan</option>
+                        </select>
+                        <input type="submit" value="Kirim">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--flexbox untuk bagian keunggulan-->
+        <div class="strength-container">
+            <div class="strength">
+                <h1>Keunggulan Kami</h1>
+                <div class="box-strength">
+                    <ul>
+                        <li><span>1</span>Harga paling murah dibanding agen lain</li>
+                        <li><span>2</span>Kualitas dan pelayanan yang cepat dan terbaik</li>
+                        <li><span>3</span>Garansi uang kembali apabila Anda tidak puas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Halaman our package-->
+        <div id="ourpackage">
+            <div class="title-container">
+                <h1>Our Package</h1>
+            </div>
+            <div class="package-container">
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/bali.jpg">
+                        <div class="loc-container">
+                            <h2>Bali</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Bali</h2>
+                        <p>Destinasi wisata terpopuler di Indonesia dengan pantai yang indah, budaya yang kaya, dan keanekaragaman alam yang menarik.</p>
+                    </div>
+                </div>
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/lombok.jpg">
+                        <div class="loc-container">
+                            <h2>Lombok</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Lombok</h2>
+                        <p>Destinasi wisata dengan banyak pantai yang menakjubkan, pegunungan, dan air terjun yang indah.</p>
+                    </div>
+                </div>
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/yogyakarta.jpg">
+                        <div class="loc-container">
+                            <h2>Yogyakarta</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Yogyakarta</h2>
+                        <p>Kota budaya di Indonesia yang terkenal dengan bangunan bersejarah, seperti Candi Borobudur, Candi Prambanan, dan keraton.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="package-container">
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/bandung.jpg">
+                        <div class="loc-container">
+                            <h2>Bandung</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Bandung</h2>
+                        <p>Kota dengan keindahan alam pegunungannya, serta kuliner yang khas dengan budaya Sunda.</p>
+                    </div>
+                </div>
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/manado.jpeg">
+                        <div class="loc-container">
+                            <h2>Manado</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Manado</h2>
+                        <p>Kota yang terkenal dengan keindalahan alam bawah lautnya, taman nasional yang beragam, serta kuliner khas yang lezat.</p>
+                    </div>
+                </div>
+                <div class="loc">
+                    <div class="loc-image">
+                        <img src="resource/medan.jpg">
+                        <div class="loc-container">
+                            <h2>Medan</h2>
+                        </div>
+                    </div>
+                    <div class="loc-overlay">
+                        <h2>Medan</h2>
+                        <p>Salah satu destinasi wisata dengan keindahan Danau Toba-nya dan tempat-tempat bersejarah lainnya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--bagian call us-->
+        <div id="callus">
+            <div class="callus-container">
+                <h1>Tunggu Apa Lagi, Pesan Sekarang Juga!</h1><br>
+                <p>Dapatkan penawaran terbaik dengan langsung menghubungi pihak kami.</p><br>
+                <button>Hubungi Kami</button>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <img src="resource/textlogo.png"><br>
+        <a href="#">Terms of Service</a><a href="#">Privacy Policy</a><br>
+        <div>&copy; 2023 Re:Kreasi</div>
+    </footer>
+</body>
+</html>
